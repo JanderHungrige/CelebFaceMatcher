@@ -47,7 +47,7 @@ Otherwise, use the files as following to create the demo from scratch or create 
   * If you do not have this gold standart Embeddings file, see next point. If you want to plot your embeddings per folder use **1d-proof_images_plotting.py**
 * Use **2 -Create embeddings database.py** to create Embeddings for the crawled and cropped faces. 
   * This can also be used to create a Embeddings_file to be used as the gold standart with non-creative commons files (which are moslty better, but cannot be used commercially). This non creative commons images will only be used to compare your creative commons images and find/delete missmatches. To get the non creative commons images, use the **1a-Image-Crawler.py** again without the filter: *license= (commercial, reuse)*.
-* Now that you have your qunatized model, an Embedding file from images and the image, you can run the demo with *3-Laeuftauf8Plus_v4.py* 
+* Now that you have your qunatized model, an Embedding file from images and the image, you can run the demo with **3-Laeuftauf8Plus_v4.py**
 
 
 Have fun
