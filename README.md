@@ -9,7 +9,7 @@ The demo will take an image with your webcam or embedded camera and if a face is
 
 With this repo, you will find all the steps to create a celebrity- face comparison demo. **A detailed describtion can be found [in this blog](https://janwerth.medium.com/1e4e9de660cc?source=friends_link&sk=c938b9ebfd55f8dec0b486ca746df763)**
 
-A version that runs more smooth on embedded hardware, can be found [here](https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp36-cp36m-linux_x86_64.whl)
+A version that runs more smooth on embedded hardware, can be found [here](https://github.com/phytec/demo-celebrity-face-match)
 
 ## Prerequisite
 
@@ -26,10 +26,14 @@ A version that runs more smooth on embedded hardware, can be found [here](https:
 
 The tf.keras-vggface model you need: https://github.com/JanderHungrige/tf.keras-vggface
 
-To install the tflite_runtime, download [this x86 wheel file](https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp36-cp36m-linux_x86_64.whl) and install via pip install path_to_file if the above (ARM) does not work.
+To install the tflite_runtime, download and install [this x86 wheel file](https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp36-cp36m-linux_x86_64.whl) and install via pip install path_to_file if the above (ARM) does not work.
 
 ## The model and files 
-If you are the fast type, you can download the tflite model and dataset [here: ](ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz) ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz
+If you are the fast type, you can download the tflite model and dataset here:
+```
+wget ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz
+tar -xzf demo-celebrity-face-match-data-1.0.tar.gz
+```
 
 If you use this repo and downloaded the model, please save the model into the model folder or adjust the path in the 3-Laeuftauf8Plus_v4.py file. 
 
@@ -48,3 +52,5 @@ Otherwise, use the files as following to create the demo from scratch or create 
 
 Have fun
 
+## License
+This project is licensed under the Apache License Version 2.0. See the file *LICENSE* for detailed information.
