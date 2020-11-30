@@ -40,14 +40,14 @@ If you use this repo and downloaded the model, please save the model into the mo
 ## The Files explained
 Otherwise, use the files as following to create the demo from scratch or create your own demo in an adapted way.
 
-* use **1a-Image-Crawler.py** to crawl for celebrity images or the images you want to use as base. 
-* use  **1b-get_faces_and_crop.py** to only get the faces from the freshly downloaded images and cut them into size 224x224 (the size can of course be altered, but the included model will only function porperly with 224x224)
-* use **1c-quant_direct_from_model.py** to quantize your model to be able to use it on a embedded NPU
-* use **1e-proof_images_analysis.py** if you want to use license free files, but you get a lot of rubbish with the crawler. Here the images will be compared within each folder to find outliers, or against a gold standart Embeddings file from good(non creative commons) images. 
+* **1a-Image-Crawler.py** to crawl for celebrity images or the images you want to use as base. 
+* **1b-get_faces_and_crop.py** to only get the faces from the freshly downloaded images and cut them into size 224x224 (the size can of course be altered, but the included model will only function porperly with 224x224)
+* **1c-quant_direct_from_model.py** to quantize your model to be able to use it on a embedded NPU
+* **1e-proof_images_analysis.py** if you want to use license free files, but you get a lot of rubbish with the crawler. Here the images will be compared within each folder to find outliers, or against a gold standart Embeddings file from good(non creative commons) images. 
   * If you do not have this gold standart Embeddings file, see next point. If you want to plot your embeddings per folder use **1d-proof_images_plotting.py**
-* Use **2 -Create embeddings database.py** to create Embeddings for the crawled and cropped faces. 
+* **2 -Create embeddings database.py** to create Embeddings for the crawled and cropped faces. 
   * This can also be used to create a Embeddings_file to be used as the gold standart with non-creative commons files (which are moslty better, but cannot be used commercially). This non creative commons images will only be used to compare your creative commons images and find/delete missmatches. To get the non creative commons images, use the **1a-Image-Crawler.py** again without the filter: *license= (commercial, reuse)*.
-* Now that you have your qunatized model, an Embedding file from images and the image, you can run the demo with **3-Laeuftauf8Plus_v4.py**
+* **3-Laeuftauf8Plus_v4.py** : Now that you have your qunatized model, an Embedding file from images and the image, this file will run the demo
 
 
 Have fun
