@@ -5,7 +5,7 @@
 
 # Introduction 
 
-The demo will take an image with your webcam or embedded camera and if a face is found and marked, you can hit space. The detected image is croped and analysed with a Neural Network. The result will be displayed with the image and name of the celebrity. Again, for more details visit the blog mentioned above.  
+The demo will take a video stream from your webcam, or embedded camera, and detects all faces in it. If a face is found and marked, you can hit space to indentify which celebrity looks the marked face most closely. The detected image is croped and analysed with a Neural Network. The demo will display the resulting celebrity with his image and name next to your face. To restart the stream hit space again or cancel with ESC.
 
 With this repo, you will find all the steps to create a celebrity- face comparison demo. **A detailed describtion can be found [in this blog](https://janwerth.medium.com/1e4e9de660cc?source=friends_link&sk=c938b9ebfd55f8dec0b486ca746df763)**
 
