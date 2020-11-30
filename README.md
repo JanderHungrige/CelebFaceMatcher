@@ -3,9 +3,29 @@
 
 ![alt text](https://github.com/JanderHungrige/CelebFaceMatcher/blob/master/jandemo.png?raw=true)
 
+# Introduction 
+
+The demo will take an image with your webcam or embedded camera and if a face is found and marked, you can hit space. The detected image is croped and analysed with a Neural Network. The result will be displayed with the image and name of the celebrity. Again, for more details visit the blog mentioned above.  
+
 With this repo, you will find all the steps to create a celebrity- face comparison demo. A detailed describtion can be found [in this blog](https://janwerth.medium.com/1e4e9de660cc?source=friends_link&sk=c938b9ebfd55f8dec0b486ca746df763)
 
-If you are the fast type, you can download the tflite model and dataset [here](ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz) ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz
+## Prerequisite
+
+* python 3.6+ environment (I recommend [Anaconda](https://www.anaconda.com/) using [virtual environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)),
+* [icrawler](https://pypi.org/project/icrawler/) , 
+* [TensorFlow 2.x](https://pypi.org/project/tensorflow/),
+* [tflite_runtime](https://pypi.org/project/tflite/),
+* [pandas](https://pypi.org/project/pandas/),
+* [numpy](https://pypi.org/project/numpy/),
+* [matplotlib](https://pypi.org/project/matplotlib/), 
+* [scipy](https://pypi.org/project/scipy/), 
+* [opencv-python](https://pypi.org/project/opencv-python/),
+* [and the tf.keras-vggface model](https://github.com/JanderHungrige/tf.keras-vggface).
+
+The tf.keras-vggface model you need: https://github.com/JanderHungrige/tf.keras-vggface
+
+
+If you are the fast type, you can download the tflite model and dataset [here: ](ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz) ftp://ftp.phytec.de/pub/Software/Linux/Applications/demo-celebrity-face-match-data-1.0.tar.gz
 
 If you use this repo and downloaded the model, please save the model into the model folder or adjust the path in the 3-Laeuftauf8Plus_v4.py file. 
 
@@ -20,4 +40,6 @@ Otherwise, use the files as following to create the demo from scratch or create 
   * This can also be used to create a Embeddings_file to be used as the gold standart with non-creative commons files (which are moslty better, but cannot be used commercially). This non creative commons images will only be used to compare your creative commons images and find/delete missmatches. To get the non creative commons images, use the *1a-Image-Crawler.py* again without the filter: *license= (commercial, reuse)*.
 * Now that you have your qunatized model, an Embedding file from images and the image, you can run the demo with *3-Laeuftauf8Plus_v4.py* 
 
-The demo will take an image with your webcam or embedded camera and if a face is found and marked, you can hit space. The detected image is croped and analysed with a Neural Network. The result will be displayed with the image and name of the celebrity. Again, for more details visit the blog mentioned above.  
+
+Have fun
+
