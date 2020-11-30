@@ -9,7 +9,7 @@ The demo will take an image with your webcam or embedded camera and if a face is
 
 With this repo, you will find all the steps to create a celebrity- face comparison demo. **A detailed describtion can be found [in this blog](https://janwerth.medium.com/1e4e9de660cc?source=friends_link&sk=c938b9ebfd55f8dec0b486ca746df763)**
 
-A version that runs more smooth on embedded hardware, can be found here: 
+A version that runs more smooth on embedded hardware, can be found [here](https://github.com/google-coral/pycoral/releases/download/release-frogfish/tflite_runtime-2.5.0-cp36-cp36m-linux_x86_64.whl)
 
 ## Prerequisite
 
